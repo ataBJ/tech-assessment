@@ -61,16 +61,12 @@ class EligibilityService {
   static checkFulfilment(cartValue, conditionValue, conditionKey) {
     switch (conditionKey) {
       case 'gt':
-        console.log('Inside gt');
         return cartValue > conditionValue;
       case 'gte':
-        console.log('Inside gte');
         return cartValue >= conditionValue;
       case 'lt':
-        console.log('Inside lt');
         return cartValue < conditionValue;
       case 'lte':
-        console.log('Inside lte');
         return cartValue <= conditionValue;
       case 'in':
         return conditionValue.includes(cartValue);
